@@ -81,9 +81,9 @@ namespace ChildrenSportSchool
         /// </summary>
         public string Place { get; set; }
         /// <summary>
-        /// Руководители
+        /// Учителя
         /// </summary>
-        public List<string> Leaders { get; private set; }
+        public List<Teacher> Teacher { get; private set; }
 
         public override string ToString()
         {
