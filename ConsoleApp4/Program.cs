@@ -27,6 +27,10 @@ namespace ChildrenSportSchool
         /// Фотография
         /// </summary>
         public byte[] Photo { get; set; }
+        /// <summary>
+        /// Секции
+        /// </summary>
+        public List<Lessons> Lessons { get; set; }
     }
 
     /// <summary>
@@ -42,6 +46,13 @@ namespace ChildrenSportSchool
         ///  Направление
         /// </summary>
         public SportType sportType { get; set; }
+        /// <summary>
+        /// Список наград
+        /// </summary>
+        public static List<string> Awards = new List<string>()
+        {
+
+        };
         /// <summary>
         /// Фотография
         /// </summary>
@@ -64,11 +75,15 @@ namespace ChildrenSportSchool
         /// <summary>
         /// Время
         /// </summary>
-        public TimeSpan Time { get; set; }
+        public DateTime Time { get; set; }
         /// <summary>
         /// Место проведения
         /// </summary>
         public string Place { get; set; }
+        /// <summary>
+        /// Руководители
+        /// </summary>
+        public List<string> Leaders { get; private set; }
 
         public override string ToString()
         {
@@ -126,4 +141,5 @@ namespace ChildrenSportSchool
         /// </summary>
         Cheerliding,
     }
+}
 
